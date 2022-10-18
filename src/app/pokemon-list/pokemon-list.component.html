@@ -1,0 +1,16 @@
+<div class="logo">
+  <img src="https://blueedtech.com.br/wp-content/themes/blue/dist/images/logo-blue-croped.gif"
+  width="100px"
+  >
+</div>
+<div class="pokemon-list">
+  <app-pokemon-card
+  *ngFor="let pokemon of pokemons; index as i"
+  [pokemon]="pokemon"
+  [idPokemon]="i + 1"
+  >
+    <!-- <div *ngFor="let pokemon of pokemons">
+      Pokemon: {{ pokemon }}
+    </div> -->
+  </app-pokemon-card>
+</div>
